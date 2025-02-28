@@ -53,4 +53,24 @@ String X = "X";
 String Y = "Y";
 String Z = "Z";
 
-Console.WriteLine(H + e + l + l + o + SPACE + W + o + r + l + d);
+String firstPart = h.ToString() + e;
+String firstLetter = l + l.ToString();
+String secondPart = o.ToString();
+
+String space = SPACE.ToString();
+String thirdPart = w.ToString() + o;
+String thirdLetter = r + l.ToString();
+String fourthPart = d.ToString();
+
+String hello = firstPart + firstLetter + firstLetter + secondPart;
+String world = thirdPart + thirdLetter + fourthPart;
+
+String fullMessage = hello + space + world;
+
+String part1 = fullMessage.Substring(0, 5);
+String part2 = fullMessage.Substring(6, 5);
+String finalMessage = part1 + space + part2;
+
+String incrediblyStupid = finalMessage + fullMessage.Length.ToString() + fullMessage.ToUpper();
+
+Console.WriteLine(incrediblyStupid.ToString());
